@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/green-market/static/css/main.a617e044.chunk.css",
+    "main.js": "/green-market/static/js/main.8fce74e2.chunk.js",
+    "main.js.map": "/green-market/static/js/main.8fce74e2.chunk.js.map",
+    "runtime-main.js": "/green-market/static/js/runtime-main.88f6e512.js",
+    "runtime-main.js.map": "/green-market/static/js/runtime-main.88f6e512.js.map",
+    "static/css/2.7d953885.chunk.css": "/green-market/static/css/2.7d953885.chunk.css",
+    "static/js/2.fc935501.chunk.js": "/green-market/static/js/2.fc935501.chunk.js",
+    "static/js/2.fc935501.chunk.js.map": "/green-market/static/js/2.fc935501.chunk.js.map",
+    "static/js/3.6ee79d47.chunk.js": "/green-market/static/js/3.6ee79d47.chunk.js",
+    "static/js/3.6ee79d47.chunk.js.map": "/green-market/static/js/3.6ee79d47.chunk.js.map",
+    "index.html": "/green-market/index.html",
+    "static/css/2.7d953885.chunk.css.map": "/green-market/static/css/2.7d953885.chunk.css.map",
+    "static/css/main.a617e044.chunk.css.map": "/green-market/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.fc935501.chunk.js.LICENSE.txt": "/green-market/static/js/2.fc935501.chunk.js.LICENSE.txt",
+    "static/media/ad1.36685308.jpg": "/green-market/static/media/ad1.36685308.jpg",
+    "static/media/ad2.8a248d48.jpg": "/green-market/static/media/ad2.8a248d48.jpg",
+    "static/media/ad3.db135bfa.jpg": "/green-market/static/media/ad3.db135bfa.jpg",
+    "static/media/banner_1.ca3bd4af.png": "/green-market/static/media/banner_1.ca3bd4af.png",
+    "static/media/banner_2.2826a9bc.png": "/green-market/static/media/banner_2.2826a9bc.png",
+    "static/media/notfound.16519552.jpg": "/green-market/static/media/notfound.16519552.jpg",
+    "static/media/index.css": "/green-market/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88f6e512.js",
+    "static/css/2.7d953885.chunk.css",
+    "static/js/2.fc935501.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.8fce74e2.chunk.js"
+  ]
+}
