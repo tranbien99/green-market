@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useHistory } from "react-router-dom";
-import { auth, signInWithEmailAndPassword } from "../../firebaseConfig"
+import { auth, signInWithEmailAndPassword, signInWithGoogle } from "../../firebaseConfig"
 
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -127,6 +127,7 @@ export default function SignInSide() {
             >
               Sign In
             </Button>
+
             <Grid container>
               <Grid item xs>
                 <Link to='/register'>

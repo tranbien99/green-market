@@ -2,11 +2,14 @@
   "name": "green-market",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tranbien99.github.io/green-market",
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
+    "@paypal/paypal-js": "^4.1.0",
+    "@paypal/react-paypal-js": "^7.4.2",
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -14,7 +17,9 @@
     "axios": "^0.21.1",
     "color": "^4.0.1",
     "firebase": "^9.0.1",
+    "gh-pages": "^3.2.3",
     "lodash": "^4.17.21",
+    "paypal-checkout": "^4.0.331",
     "query-string": "^7.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -22,6 +27,7 @@
     "react-firebaseui": "^5.0.2",
     "react-jss": "^8.6.1",
     "react-material-ui-carousel": "^2.2.7",
+    "react-paypal-button-v2": "^2.6.3",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
@@ -31,7 +37,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
