@@ -6,8 +6,8 @@ import queryString from "query-string";
 import dateFormat from "dateformat";
 import sha256 from "sha256";
 
-const HASH_SECRET = "YOYZOREKINDWKDXKDFDASDQINNCVFAII";
-const TMNCODE = " 93N8YFGW";
+const HASH_SECRET = "INVLFPJEZDJVOVNYSJAIOYQBXOAUNQHP";
+const TMNCODE = "3N2TIUAX";
 const VNP_URL = "http://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
 const VNP_RETURN = "http://localhost:3000";
 
@@ -27,8 +27,12 @@ function sortObject(o) {
   return sorted;
 }
 
-function VnpPayment() {
+function VnpPayment(props) {
   const [url, setUrl] = useState("");
+  const [go, setGo] = useState(false);
+  const handleGo = () => {
+    setGo(true);
+  };
 
   const onSubmit = async () => {
     const tmnCode = TMNCODE;
@@ -39,10 +43,10 @@ function VnpPayment() {
 
     const createDate = dateFormat(date, "yyyymmddHHmmss");
     const orderId = dateFormat(date, "HHmmss");
-    const amount = "2155000";
+    const amount = props.total;
     const bankCode = "NCB";
 
-    const orderInfo = "Nap tien cho thue bao 0123456789. So tien 100,000";
+    const orderInfo = `Nap tien cho thue bao 0123456789. So tien ${props.total}`;
     const orderType = "topup";
     const locale = "vn";
     const currCode = "VND";
@@ -76,6 +80,7 @@ function VnpPayment() {
     const vnpUrl =
       VNP_URL + "?" + queryString.stringify(vnp_Params, { encode: true });
     setUrl(vnpUrl);
+    handleGo();
   };
 
   const sumQuery = queryString.parse(window.location.search);
@@ -94,16 +99,15 @@ function VnpPayment() {
 
   return (
     <div className="App">
-      <Button
-        variant="contained"
-        color="primary"
-        type="button"
-        onClick={onSubmit}
-      >
-        Submit
+      <Button type="button" onClick={onSubmit}>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5515FmyJZIk7cymP3Sz1CPB1iSmAflganSA&usqp=CAU"
+          style={{ width: "70%" }}
+          alt="img"
+        ></img>
       </Button>
       <br />
-      <TextareaAutosize
+      {/* <TextareaAutosize
         maxRows={10}
         aria-label="maximum height"
         placeholder="Maximum 4 rows"
@@ -111,12 +115,16 @@ function VnpPayment() {
         onChange={(e) => {
           setUrl(e.target.value);
         }}
-      />
-      <h6>
-        <a href={url}>
-          <h3>GO</h3>
-        </a>
-      </h6>
+      /> */}
+      {go ? (
+        <h6>
+          <a href={url}>
+            <h3>Xác nhận</h3>
+          </a>
+        </h6>
+      ) : (
+        " "
+      )}
     </div>
   );
 }
