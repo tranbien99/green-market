@@ -11,11 +11,11 @@ export default function BaoKimButton() {
         mrc_order_id: `my_order_id_${Math.random()
           .toString(36)
           .substring(2)}_${Date.now()}`,
-        total_amount: 60000,
+        total_amount: 20000,
         payment_method_type: "card",
         description: "thanh toan dien thoai iphone xs max gia re",
         success_url:
-          "https://123docz.net//document/5503778-xay-dung-website-thuong-mai-dien-tu-tich-hop-thanh-toan-truc-tuyen.htm",
+          "https://sandbox-api.baokim.vn/payment/v8ew5rvFMuH2gTCOGslofZGnQ2wGI6bC",
         cancel_url: "https://www.messenger.com/",
       }}
       configButton={{

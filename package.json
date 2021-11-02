@@ -17,10 +17,12 @@
         "axios": "^0.21.1",
         "baokim-react": "^0.1.3",
         "color": "^4.0.1",
+        "dateformat": "^5.0.2",
         "firebase": "^9.2.0",
         "gh-pages": "^3.2.3",
         "lodash": "^4.17.21",
         "paypal-checkout": "^4.0.331",
+        "public-ip": "^4.0.4",
         "query-string": "^7.0.1",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
@@ -32,6 +34,7 @@
         "react-redux": "^7.2.4",
         "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.3",
+        "sha256": "^0.2.0",
         "web-vitals": "^1.1.2"
     },
     "scripts": {

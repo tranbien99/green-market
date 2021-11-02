@@ -15,7 +15,7 @@ import {
   decrease,
   decreaseByRemove,
 } from "../../features/counter/counterSlice";
-import BaoKimButton from "../BaoKimButton";
+import VnpPayment from "../VnpPayment";
 
 export default function Cart() {
   const [total, setTotal] = useState(0);
@@ -60,7 +60,8 @@ export default function Cart() {
               Total: {total}$
             </Typography>
             <PaypalButton total={total} />
-            <BaoKimButton />
+            <VnpPayment />
+            {/* <BaoKimButton /> */}
           </>
         )}
       </Container>
